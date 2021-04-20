@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from 'react-router-dom';
 import './App.css';
 import Content from './components/Content';
 import Login from './components/Login';
@@ -19,7 +25,7 @@ function App() {
             <Protected />
           </Route>
           <Route path='/login'>
-            <Login />
+            <Login redirect={Redirect} />
           </Route>
           <Route path='/register'>
             <Register />
