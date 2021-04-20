@@ -6,7 +6,7 @@ export default function Register(props) {
 
   function submitForm(e) {
     e.preventDefault();
-    fetch('http://localhost:5000/api/user/register', {
+    fetch('https://chelsea-university-server.herokuapp.com/api/user/register', {
       method: 'POST',
       body: JSON.stringify({ ...user }),
       headers: { 'Content-Type': 'application/json' },

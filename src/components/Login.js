@@ -6,7 +6,7 @@ export default function Login(props) {
 
   function submitForm(e) {
     e.preventDefault();
-    fetch('http://localhost:5000/api/user/login', {
+    fetch('https://chelsea-university-server.herokuapp.com/api/user/login', {
       method: 'POST',
       body: JSON.stringify({ ...user }),
       headers: { 'Content-Type': 'application/json' },
