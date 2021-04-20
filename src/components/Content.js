@@ -1,14 +1,15 @@
-export default function Content() {
+export default function Content(props) {
   return (
     <div>
       <div class='bg-indigo-100 py-6 md:py-12'>
         <div class='container px-4 mx-auto'>
           <div class='text-center max-w-2xl mx-auto'>
             <h1 class='text-5xl xl:mt-16 md:text-4xl font-medium mb-2'>
-              Register for your admission here.
+              Register for your admission here into{' '}
+              <span className='text-indigo-700'>Chelsea University</span> here.
             </h1>
             <button class='bg-indigo-600 text-white py-2 px-6 rounded-full text-xl mt-6'>
-              Get Started
+              <props.link to='/register'>Get Started</props.link>
             </button>
           </div>
 
