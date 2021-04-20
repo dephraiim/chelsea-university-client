@@ -28,7 +28,7 @@ function App() {
             <Login redirect={Redirect} />
           </Route>
           <Route path='/register'>
-            <Register />
+            <Register redirect={Redirect} />
           </Route>
         </Switch>
       </div>

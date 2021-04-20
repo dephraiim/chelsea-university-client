@@ -4,7 +4,7 @@ export default function Login(props) {
   const [user, setUser] = useState({ email: '', password: '' });
   const [loggedIn, setLoggedIn] = useState(false);
 
-  async function submitForm(e) {
+  function submitForm(e) {
     e.preventDefault();
     fetch('http://localhost:5000/api/user/login', {
       method: 'POST',
